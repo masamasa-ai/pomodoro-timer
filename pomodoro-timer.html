@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロタイマー</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .timer-container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .time-display {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            margin: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .start-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pause-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .status {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer-container">
+        <h1>ポモドーロタイマー</h1>
+        <div class="time-display" id="timeDisplay">25:00</div>
+        <div class="status" id="status">作業時間</div>
+        <button class="start-btn" id="startBtn">開始</button>
+        <button class="pause-btn" id="pauseBtn">一時停止</button>
+        <button class="reset-btn" id="resetBtn">リセット</button>
+    </div>
+    <script src="pomodoro-timer.js"></script>
+</body>
+</html>
